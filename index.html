@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENIA</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+          <div class="navbar">
+            <span class="logo text-white">ENIA</span>
+            <div class="tab">
+              <a href="#" class="tab-item active text-white">
+                Home
+              </a>
+              <a href="#" class="tab-item text-white">
+                Women
+              </a>
+              <a href="#" class="tab-item text-white">
+                Men
+              </a>
+              <a href="#" class="tab-item text-white">
+                Smart Gear
+              </a>
+              <a href="#" class="tab-item text-white">
+                Accssories
+              </a>
+            </div>
+            <a href="#" class="bag">
+              <span class="badge">10</span>
+              <i class="bi bi-bag text-white"></i>
+            </a>
+          </div>
+        </div>
+    </header>
+    <div class="container">
+      <div class="filter-block">
+        <div class="filter-catogry" id="productCategory">
+         
+        </div>
+        <div class="filter-search">
+          <div class="search-input">
+            <span class="search-input-icon"><i class="bi bi-search"></i></span>
+            <input type="text" class="c-input" onkeyup="searchProducts()" placeholder="Search products by name" id="searchBox" />
+          </div>
+          <select class="c-input" onchange="handleSortChange(event)">
+            <option value="relevant">Relevant</option>
+            <option value="lowToHigh">Price Low to High</option>
+            <option value="highToLow">Price High to Low</option>
+          </select>
+        </div>
+     </div>
+     
+        <div class="list" id="list">
+            <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </div>
+      </div>
+      <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
